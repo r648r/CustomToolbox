@@ -1,0 +1,2 @@
+inurl:test | inurl:env | inurl:dev | inurl:staging | inurl:sandbox | inurl:debug | inurl:temp | inurl:internal | inurl:demo 
+inurl:trainers.php?id=

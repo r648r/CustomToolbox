@@ -1,0 +1,18 @@
+wordlists:
+  - ..\Wordlist\juicy.txt
+  - ..\Wordlist\lfi.txt
+  - ..\Wordlist\sqli.txt
+
+output_file: .\result
+
+Google-API:
+
+ - AIzaSyAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+ - AIzaSBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+ - AIzaSCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC
+
+Google-CSE-ID:
+
+  - cafecafecafecafec 
+  - deadeadeadeadeade
+  - beefbeefbeefbeefb
