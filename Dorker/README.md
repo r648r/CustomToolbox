@@ -7,19 +7,19 @@
 - [ ] Crée le repertoire .\result si il n'existe pas
 - [ ] Crée un fichier en output soit dans le reperoire ./result de cette forme : <nom_de_la_wordlist (sans le '.txt')>.domain.txt
 - [ ] Faire l'output dans un fichier parsable en bash facilement
-- [ ] Trouver pourquoi le programme tourne autant quand les clef sont dead
 - [ ] Constante.py Test and add support with arguments + config file
+- [X] Trouver pourquoi le programme tourne autant quand les clef sont dead
 
 ### Features
 
 - [ ] Faire un fuzzer de clef CSE pour généré des clef
 - [ ] Géré les dork avec des "" et non site:
 - [ ] Implémenté le listing sur une wrodlist de domaine
-- [ ] Trouver solution pour automatisation a grande echelle
 - [ ] Statistique sur les dork qui marche le mieux
 - [ ] Faire un arg qui verifie si les dork d'une worldlist sont KO meme sans site
 - [ ] Implémenté une enum de domaine via un arg et une wordlist deja la
 - [ ] Asynchore / multhreding
+- [X] Trouver solution pour automatisation a grande echelle
 
 ### Super chiant
 
