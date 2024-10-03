@@ -1,7 +1,6 @@
 # dorker.py
 
 import logging
-import os
 
 # Import local
 from modules.constants import (
@@ -10,7 +9,7 @@ from modules.constants import (
 )
 from modules.config_loader import load_config, get_config_values
 from modules.dorking import handle_dorking
-from modules.arguments import parse_arguments  # Importer parse_arguments
+from modules.arguments import parse_arguments
 
 def main():
     args = parse_arguments()

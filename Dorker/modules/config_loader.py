@@ -8,7 +8,6 @@ from .exceptions import NoValidCSEIDException
 
 
 def load_config(config_file="google_dorker.yaml"):
-    """Load the configuration from the YAML file."""
     if not os.path.isfile(config_file):
         logging.error(f"Configuration file {config_file} not found.")
         sys.exit(1)
@@ -20,7 +19,6 @@ def load_config(config_file="google_dorker.yaml"):
         sys.exit(2)
 
 def get_config_values(config_data, key, default=None, error_message=None):
-    """Retrieve a value from the configuration data."""
     value = config_data.get(key, default)
     if value is None and error_message:
         logging.error(error_message)

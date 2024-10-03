@@ -13,9 +13,6 @@ def handle_dorking(config_data, domain, output_file, query=None):
     wordlists = get_config_values(config_data, 'wordlists', [], "No wordlists specified in configuration.")
     google_api_keys = get_config_values(config_data, 'Google-API', [], "No Google API keys specified in configuration.")
     google_cse_ids = get_config_values(config_data, 'Google-CSE-ID', [], "No Google CSE IDs specified in configuration.")
-    ic(type(google_api_keys), google_api_keys)
-    ic(type(google_cse_ids), google_cse_ids)
-
 
     # If a direct query is provided, use it
     if query:

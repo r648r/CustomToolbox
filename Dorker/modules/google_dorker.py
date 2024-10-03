@@ -27,7 +27,6 @@ def build_google_service(api_keys):
         except HttpError as e:
             logging.error(f"Clé API invalide ou quota dépassé pour '{api_key}' - {e}")
             api_keys.remove(api_key)
-            ic(type(api_key), api_key)
 
     raise NoValidAPIKeyException("Aucune clé API Google valide disponible.")
 
@@ -79,9 +78,6 @@ def process_results(items):
     return results
 
 def save_and_log_results(results, output_file, search_query):
-    """
-    Enregistre et journalise les résultats dans le fichier de sortie.
-    """
     if results:
         for title, link in results:
             formatted_result = f"[{search_query}] [{link}] [{title}]"

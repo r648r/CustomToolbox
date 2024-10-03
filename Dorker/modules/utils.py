@@ -22,7 +22,6 @@ def write_result(output_directory, search_query, url):
         logging.error(f"Failed to write result to {output_directory} - {e}")
 
 def validate_arguments(args):
-    """Validate script arguments."""
     if not args.query and not args.domain:
         logging.error("Either a query or domain must be provided.")
         sys.exit(7)

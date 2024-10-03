@@ -5,12 +5,10 @@ from .constants import COLORS
 
 
 def validate_arguments(args, parser):
-    """Valide les arguments de la ligne de commande."""
     if not args.query and not args.domain:
         parser.error("At least one of --query or --domain must be specified.")
 
 def parse_arguments():
-    """Analyse les arguments de la ligne de commande et les retourne."""
     parser = argparse.ArgumentParser(
         description=f"{COLORS['CYAN']}A Powerful Tool for Google Dorking{COLORS['RESET']}"
     )
