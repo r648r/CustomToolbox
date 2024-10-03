@@ -10,7 +10,6 @@
 - [ ] Trouver pourquoi le programme tourne autant quand les clef sont dead
 - [ ] Constante.py Test and add support with arguments + config file
 
-
 ### Features
 
 - [ ] Faire un fuzzer de clef CSE pour généré des clef
@@ -24,7 +23,7 @@
 
 ### Super chiant
 
-- [ ] meilleurs pratique python : https://github.com/Utkarsh731/python-coding-best-pracitces
+- [ ] meilleurs pratique python : <https://github.com/Utkarsh731/python-coding-best-pracitces>
 - [ ] cache_discovery=False  Comprendre c'est quoi cette merde : cache_discovery=False
 - [ ] Faire des commentaires plsu claire en anaglais
 - [ ] Supprim tout les fr dans le code et varaible
