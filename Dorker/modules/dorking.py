@@ -1,6 +1,5 @@
 # modules/dorking.py
 
-import logging
 from icecream import ic
 
 # Import local
