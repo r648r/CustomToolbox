@@ -1,9 +1,12 @@
+# You need to rename this file to `.dorkrc.yaml`
+# in ./module/constants.py you can set default value 
+
 wordlists:
   - ..\Wordlist\juicy.txt
   - ..\Wordlist\lfi.txt
   - ..\Wordlist\sqli.txt
 
-output_file: .\result
+output_directory: .\result\
 
 Google-API:
 
