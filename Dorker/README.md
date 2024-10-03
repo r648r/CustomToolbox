@@ -15,11 +15,11 @@
 - [ ] Faire un fuzzer de clef CSE pour généré des clef
 - [ ] Géré les dork avec des "" et non site:
 - [ ] Implémenté le listing sur une wrodlist de domaine
-- [ ] Trouver solution pour automatisation a grande echelle
 - [ ] Statistique sur les dork qui marche le mieux
 - [ ] Faire un arg qui verifie si les dork d'une worldlist sont KO meme sans site
 - [ ] Implémenté une enum de domaine via un arg et une wordlist deja la
 - [ ] Asynchore / multhreding
+- [X] Trouver solution pour automatisation a grande echelle
 
 ### Super chiant
 
