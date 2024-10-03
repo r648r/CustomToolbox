@@ -7,8 +7,8 @@
 - [ ] Crée le repertoire .\result si il n'existe pas
 - [ ] Crée un fichier en output soit dans le reperoire ./result de cette forme : <nom_de_la_wordlist (sans le '.txt')>.domain.txt
 - [ ] Faire l'output dans un fichier parsable en bash facilement
-- [ ] Trouver pourquoi le programme tourne autant quand les clef sont dead
 - [ ] Constante.py Test and add support with arguments + config file
+- [X] Trouver pourquoi le programme tourne autant quand les clef sont dead
 
 ### Features
 
