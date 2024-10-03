@@ -1,31 +1,31 @@
-import os
-import logging
+# modules/utils.py
 
-def write_result(output_file, search_query, url):
-    """Write a result to the output file."""
+import os
+import sys
+import logging
+from icecream import ic
+
+def write_result(output_directory, search_query, url):
+    """Fonction completement fraccassé CHAT VA TE FAIRE ENCULE"""
     try:
-        output_dir = os.path.dirname(output_file)
+        output_dir = os.path.dirname(output_directory)
+        ic(type(output_dir), output_dir)
         # Create the output directory if it doesn't exist
         if output_dir and not os.path.exists(output_dir):
             os.makedirs(output_dir, exist_ok=True)
             logging.info(f"Created output directory: {output_dir}")
 
-        with open(output_file, "a", encoding='utf-8') as file:
+        with open(output_directory, "a", encoding='utf-8') as file:
             file.write(f"[{search_query}] {url}\n")
-            logging.debug(f"Wrote result to {output_file}: [{search_query}] {url}")
+            logging.debug(f"Wrote result to {output_directory}: [{search_query}] {url}")
     except Exception as e:
-        logging.error(f"Failed to write result to {output_file} - {e}")
-
+        logging.error(f"Failed to write result to {output_directory} - {e}")
 
 def validate_arguments(args):
     """Validate script arguments."""
     if not args.query and not args.domain:
         logging.error("Either a query or domain must be provided.")
-        exit()
-        
-    if args.output and not args.output.endswith(".txt"):
-        logging.error("Output file must be a .txt file.")
-        exit()
+        sys.exit(7)
 
 def charger_mots(wordlist_path):
     """Load words from a wordlist file and return a set of unique words."""
