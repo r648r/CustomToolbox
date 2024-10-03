@@ -4,10 +4,12 @@
 
 ### Output
 
-- [ ] Faire en sorte que le nom du fichier du dossier soit le domaine de l'entreprise
-- [ ] Faire en sorte que dans le reperoire resulat choisit dans le rc ai pour nom // que la wordlist
+- [ ] Crée le repertoire .\result si il n'existe pas
+- [ ] Crée un fichier en output soit dans le reperoire ./result de cette forme : <nom_de_la_wordlist (sans le '.txt')>.domain.txt
 - [ ] Faire l'output dans un fichier parsable en bash facilement
 - [ ] Trouver pourquoi le programme tourne autant quand les clef sont dead
+- [ ] Constante.py Test and add support with arguments + config file
+
 
 ### Features
 
@@ -23,7 +25,11 @@
 ### Super chiant
 
 - [ ] meilleurs pratique python : https://github.com/Utkarsh731/python-coding-best-pracitces
-- [ ] cache_discovery=False  Comprendre c'est quoi cette merde : cache_discovery=False 
+- [ ] cache_discovery=False  Comprendre c'est quoi cette merde : cache_discovery=False
+- [ ] Faire des commentaires plsu claire en anaglais
+- [ ] Supprim tout les fr dans le code et varaible
+- [ ] # Mettre ces 2 la ici et comprendre leur imapct : RESULTS_PER_PAGE = 10
+- [ ] TOTAL_RESULTS = 100
 - [ ] Faire du trie dans mes imports
 - [ ] Faire un tour de tout les loggins les mettre en anglais + definir le niveau plus finnement
 - [ ] Faire plus de clef de CSE Google
