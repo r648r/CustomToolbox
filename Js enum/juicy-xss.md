@@ -1,4 +1,4 @@
-# Décryptage d'un Tweet : Analyse et Génération de Payload``` en JavaScript
+# Décryptage d'un Tweet : Analyse et Génération de Payload en JavaScript
 
 Récemment, en parcourant Twitter, j'ai rencontré un tweet intrigant de @renniepak contenant le code suivant :
 
