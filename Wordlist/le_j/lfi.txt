@@ -1,0 +1,3 @@
+inurl:/view/lang/index.php?page=?page=
+inurl:test | inurl:env | inurl:dev | inurl:staging | inurl:sandbox | inurl:debug | inurl:temp | inurl:internal | inurl:demo
+inurl:/shared/help.php?page=
