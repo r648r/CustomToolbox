@@ -2,10 +2,12 @@
 
 Récemment, en parcourant Twitter, j'ai rencontré un tweet intrigant de @renniepak contenant le code suivant :
 
+Fait une fpnction qui réalise un decalage de bit en js pour decode XSS
+
+
 ```javascript
 
 eval(unescape(escape`慬敲琨❲敮湩数慫✩`.replace(/u(..)/g,"$1%")))
-```
 
 Intrigué par ce snippet, j'ai décidé de le décortiquer étape par étape pour mieux comprendre son fonctionnement. De plus, j'ai implémenté un générateur de payload en JavaScript basé sur cette méthode d'encodage. Cet article détaille chaque étape de cette analyse et présente les outils développés.
 
@@ -117,7 +119,7 @@ function renniepakEncodeOnSteroid(payload) {
 
 
 const ORIGINAL_PAYLOAD = "alert('raphzer')"
-const ENCODED_PAYLOAD = forkOfRenniepakEncode(ORIGINAL_PAYLOAD);
+const ENCODED_PAYLOAD = renniepakEncodeOnSteroid(ORIGINAL_PAYLOAD);
 const FINAL_PAYLAOD = 'unescape(escape`' + ENCODED_PAYLOAD + '`.replace(/u(..)/g,"$1%"))'
 
 console.log("Original : " + ORIGINAL_PAYLOAD);
