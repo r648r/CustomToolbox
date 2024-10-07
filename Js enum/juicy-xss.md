@@ -2,7 +2,7 @@
 
 Récemment, en parcourant Twitter, j'ai rencontré un tweet intrigant de @renniepak contenant le code suivant :
 
-Fait une fpnction qui réalise un decalage de bit en js pour decode XSS
+Fait une fpnction qui réalise un decalage de bit en js pour decode
 
 
 ```javascript
@@ -221,4 +221,40 @@ Exemple 7
 ```javascript
 String.fromCharCode(...[... (function() { return '瀀' + '愀' + '琀' + '愀' + '琀'+ '攀'; })()].map(c => c.charCodeAt() >>> 8))
 Résultat : "patate"
+```
+
+```javascript
+eval([...'⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩'].map(c => String.fromCharCode(parseInt(c.charCodeAt(0).toString(16).slice(2), 16))).join(''));
+
+eval([...`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`].map(c=>String.fromCharCode(c.charCodeAt()-10240)).join``)
+
+eval([...`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`].map(c=>String.fromCharCode(c.charCodeAt()-0x2800)).join``);
+```
+
+Fait une fpnction qui réalise un decalage de bit 
+
+
+
+```
+eval([...`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`].map(c=>String.fromCharCode(c.charCodeAt()-10240)).join``)
+eval([...`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`].map(c=>String.fromCharCode(c.charCodeAt()-0x2800)).join(''))
+eval([...'⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩'].map(c=>String.fromCharCode(c.charCodeAt()-10240)).join(''))
+eval([...`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`].map(c=>String.fromCharCode(c.charCodeAt()-0x2800)).join``)
+eval(`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`.split``.map(c=>String.fromCharCode(c.charCodeAt()-10240)).join``)
+eval(`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`.split('').map(c=>String.fromCharCode(c.charCodeAt()-0x2800)).join(''))
+eval(Array.from(`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`,c=>String.fromCharCode(c.charCodeAt()-10240)).join``)
+eval(Array.from(`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`,c=>String.fromCharCode(c.charCodeAt()-0x2800)).join(''))
+eval([...`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`].map(c=>String.fromCharCode(c.charCodeAt()-10240)).join``)
+eval(`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`.match(/./g).map(c=>String.fromCharCode(c.charCodeAt()-10240)).join(''))
+eval([...`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`].map(c=>String.fromCharCode(c.charCodeAt()-10240)).join(''))
+eval(Array.from(`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`).map(c=>String.fromCharCode(c.charCodeAt()-10240)).join(''))
+eval([...'⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩'].map(c=>String.fromCharCode(c.charCodeAt()-0x2800)).join``)
+eval([...`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`].map(c=>String.fromCharCode(10240^c.charCodeAt())).join``)
+eval([...`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`].map(c=>String.fromCharCode(c.charCodeAt()^10240)).join(''))
+eval([...'⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩'].map(c=>String.fromCharCode(c.charCodeAt()-0x2800)).join``)
+eval([...`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`].map(c=>String.fromCharCode(c.charCodeAt()-(0x2800))).join``)
+eVaL([...`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`].map(c=>String.fromCharCode(c.charCodeAt()-10240)).join``)
+eval(`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`.split``.map(c=>String.fromCharCode(c.charCodeAt()-10240)).join``)
+eval(`⡡⡬⡥⡲⡴⠨⠧⡲⡡⡰⡨⡺⡥⡲⠧⠩`.split``.map(c=>String.fromCharCode(10240^c.charCodeAt())).join``)
+
 ```
